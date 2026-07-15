@@ -1,0 +1,105 @@
+/* Content-specific additions for the research section and publication figure. */
+
+.research-description {
+  margin: 0;
+  color: #37404a;
+  font-size: 16px;
+}
+
+.research-list {
+  margin: 14px 0 0;
+  padding-left: 22px;
+  color: #3b444e;
+}
+
+.research-list li {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.publication {
+  grid-template-columns: minmax(270px, 320px) minmax(0, 1fr);
+}
+
+.publication-figure {
+  margin: 0;
+  padding: 8px;
+  background: #fff;
+  border: 1px solid #d9e0e6;
+  border-radius: 3px;
+}
+
+.publication-figure a {
+  display: block;
+}
+
+.publication-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.conference-label {
+  display: flex;
+  margin-bottom: 10px;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.conference-name {
+  display: inline-block;
+  padding: 4px 9px;
+  color: #fff;
+  background: #9b3d35;
+  border-radius: 2px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.conference-highlight {
+  color: #9b3d35;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+@media (max-width: 560px) {
+  html {
+    scroll-padding-top: 98px;
+  }
+
+  .header-inner {
+    min-height: 76px;
+  }
+
+  .site-nav {
+    overflow: visible;
+    padding: 8px 1px;
+    column-gap: 20px;
+    row-gap: 3px;
+    flex-wrap: wrap;
+  }
+
+  .site-nav a {
+    font-size: 11px;
+  }
+
+  .publication {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-figure {
+    width: 100%;
+  }
+}
+
+@media (max-width: 380px) {
+  .site-nav {
+    column-gap: 14px;
+  }
+
+  .site-nav a {
+    font-size: 10.5px;
+  }
+}
