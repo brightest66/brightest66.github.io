@@ -170,6 +170,18 @@ html[data-theme="dark"] .news-list li {
   border-bottom-color: #263746;
 }
 
+html[data-theme="dark"] .news-list {
+  scrollbar-color: #526a7d transparent;
+}
+
+html[data-theme="dark"] .news-list::-webkit-scrollbar-thumb {
+  background: #526a7d;
+}
+
+html[data-theme="dark"] .news-list::-webkit-scrollbar-thumb:hover {
+  background: #6c879b;
+}
+
 html[data-theme="dark"] .publication-figure {
   background: #edf1f4;
   border-color: #40515f;

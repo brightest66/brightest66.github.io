@@ -269,6 +269,33 @@ strong {
   list-style: none;
 }
 
+.news-list {
+  overflow-y: auto;
+  max-height: 210px;
+  padding-right: 6px;
+  overscroll-behavior-y: contain;
+  scrollbar-color: #aebdca transparent;
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+}
+
+.news-list::-webkit-scrollbar {
+  width: 7px;
+}
+
+.news-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.news-list::-webkit-scrollbar-thumb {
+  background: #aebdca;
+  border-radius: 999px;
+}
+
+.news-list::-webkit-scrollbar-thumb:hover {
+  background: #8298aa;
+}
+
 .news-list li {
   display: grid;
   padding: 8px 0;
@@ -698,6 +725,12 @@ strong {
   .publication,
   .education-list article {
     break-inside: avoid;
+  }
+
+  .news-list {
+    overflow: visible;
+    max-height: none;
+    padding-right: 0;
   }
 
   .site-footer {

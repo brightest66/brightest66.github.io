@@ -19,21 +19,6 @@
   root.dataset.theme = initialTheme;
   root.style.colorScheme = initialTheme;
 
-  function formatLocalDate(date) {
-    return new Intl.DateTimeFormat("en-US", {
-      year: "numeric",
-      month: "long",
-      day: "numeric"
-    }).format(date);
-  }
-
-  function toDateTimeValue(date) {
-    var year = date.getFullYear();
-    var month = String(date.getMonth() + 1).padStart(2, "0");
-    var day = String(date.getDate()).padStart(2, "0");
-    return year + "-" + month + "-" + day;
-  }
-
   function initializePage() {
     var toggle = document.getElementById("theme-toggle");
     var label = toggle ? toggle.querySelector(".theme-label") : null;
@@ -78,15 +63,9 @@
 
     var today = new Date();
     var currentYear = document.getElementById("current-year");
-    var lastUpdated = document.getElementById("last-updated");
 
     if (currentYear) {
       currentYear.textContent = String(today.getFullYear());
-    }
-
-    if (lastUpdated) {
-      lastUpdated.dateTime = toDateTimeValue(today);
-      lastUpdated.textContent = formatLocalDate(today);
     }
   }
 
