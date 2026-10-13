@@ -11,11 +11,11 @@
     <title>Qun Dai | Homepage</title>
     <script src="theme.js"></script>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=20261009-layout" />
-    <link rel="stylesheet" href="updates.css?v=20261009-layout" />
+    <link rel="stylesheet" href="styles.css?v=20261013-publications-4" />
+    <link rel="stylesheet" href="updates.css?v=20261013-news-logo" />
     <link rel="stylesheet" href="card-theme.css" />
     <link rel="stylesheet" href="affiliation-card.css" />
-    <link rel="stylesheet" href="theme.css" />
+    <link rel="stylesheet" href="theme.css?v=20261013-publications" />
   </head>
 
   <body>
@@ -30,6 +30,7 @@
             <a href="#research">Research</a>
             <a href="#news">News</a>
             <a href="#publications">Publications</a>
+            <a href="#competitions">Competitions</a>
             <a href="#education">Education</a>
             <a href="#awards">Awards</a>
           </nav>
@@ -149,7 +150,7 @@
           <h2 id="news-title">News</h2>
           <ul class="news-list" tabindex="0" aria-label="News items">
             <li>
-              <time datetime="2026-09">2026.09</time>
+              <time datetime="2026-10">2026.10</time>
               <span>
                 I received the National Scholarship for Master's Students.
               </span>
@@ -158,8 +159,10 @@
               <time datetime="2026-09">2026.09</time>
               <span>
                 Our paper
-                <a href="https://arxiv.org/pdf/2610.12393" target="_blank" rel="noreferrer">HRIL: Learning Multimodal Synergy via Higher-Order Tensor Modeling</a>
-                was accepted to the <strong>NeurIPS 2026</strong> as a poster.
+                <a href="https://arxiv.org/abs/2610.12393" target="_blank" rel="noreferrer">HRIL: Learning Multimodal Synergy via Higher-Order Tensor Modeling</a>
+                was accepted to the
+                <strong class="news-conference"><img class="conference-logo" src="assets/neurips-navbar-logo.svg" alt="" width="20" height="20" /> NeurIPS 2026</strong>
+                as a poster.
               </span>
             </li>
             <li>
@@ -167,7 +170,9 @@
               <span>
                 Our paper
                 <a href="https://arxiv.org/abs/2509.25270" target="_blank" rel="noreferrer">InfMasking: Unleashing Synergistic Information by Contrastive Multimodal Interactions</a>
-                was accepted to <strong>NeurIPS 2025</strong> as a
+                was accepted to
+                <strong class="news-conference"><img class="conference-logo" src="assets/neurips-navbar-logo.svg" alt="" width="20" height="20" /> NeurIPS 2025</strong>
+                as a
                 <strong>Spotlight</strong>.
               </span>
             </li>
@@ -191,24 +196,45 @@
           </div>
 
           <article class="publication">
-            <figure class="publication-figure">
-              <a href="assets/hril-flow-chart.png" target="_blank" rel="noreferrer" aria-label="Open the full-size HRIL workflow">
-                <img
-                  src="assets/hril-flow-chart.png"
-                  alt="Workflow of HRIL with multimodal fusion, cross-moment tensor modeling, and Tucker decomposition"
-                  width="6676"
-                  height="4332"
-                />
-              </a>
-            </figure>
+            <div class="publication-media">
+              <figure class="publication-figure">
+                <a href="assets/hril-flow-chart.png" target="_blank" rel="noreferrer" aria-label="Open the full-size HRIL workflow">
+                  <img
+                    src="assets/hril-flow-chart.png"
+                    alt="Workflow of HRIL with multimodal fusion, cross-moment tensor modeling, and Tucker decomposition"
+                    width="6676"
+                    height="4332"
+                  />
+                </a>
+              </figure>
+              <div class="publication-links">
+                <a href="https://arxiv.org/pdf/2610.12393" target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8Z"></path>
+                    <path d="M14 3v5h5M9 12h6M9 16h6"></path>
+                  </svg>
+                  <span>Paper</span>
+                </a>
+                <a href="https://github.com/brightest66/HRIL" target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"></path>
+                  </svg>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
 
             <div class="publication-info">
               <div class="conference-label">
-                <span class="conference-name">NeurIPS 2026</span>
+                <span class="conference-name">
+                  <img class="conference-logo" src="assets/neurips-navbar-logo.svg" alt="" width="28" height="28" />
+                  NeurIPS 2026
+                </span>
+                <span class="conference-rank" title="China Computer Federation: Category A">CCF A</span>
                 <span class="conference-highlight">Poster Paper</span>
               </div>
               <h3>
-                <a href="https://arxiv.org/pdf/2610.12393" target="_blank" rel="noreferrer">
+                <a href="https://arxiv.org/abs/2610.12393" target="_blank" rel="noreferrer">
                   HRIL: Learning Multimodal Synergy via Higher-Order Tensor Modeling
                 </a>
               </h3>
@@ -221,28 +247,45 @@
                 The Fortieth Annual Conference on Neural Information Processing
                 Systems (NeurIPS), 2026.
               </p>
-              <div class="publication-links">
-                <a href="https://arxiv.org/pdf/2610.12393" target="_blank" rel="noreferrer">Paper</a>
-                <a href="https://github.com/brightest66/HRIL" target="_blank" rel="noreferrer">Code</a>
-              </div>
             </div>
           </article>
 
           <article class="publication">
-            <figure class="publication-figure">
-              <a href="assets/infmasking-flow-chart.png" target="_blank" rel="noreferrer" aria-label="Open the full-size InfMasking workflow">
-                <img
-                  src="assets/infmasking-flow-chart.png"
-                  alt="Workflow of the InfMasking method"
-                  width="1588"
-                  height="940"
-                />
-              </a>
-            </figure>
+            <div class="publication-media">
+              <figure class="publication-figure">
+                <a href="assets/infmasking-flow-chart.png" target="_blank" rel="noreferrer" aria-label="Open the full-size InfMasking workflow">
+                  <img
+                    src="assets/infmasking-flow-chart.png"
+                    alt="Workflow of the InfMasking method"
+                    width="1588"
+                    height="940"
+                  />
+                </a>
+              </figure>
+              <div class="publication-links">
+                <a href="https://arxiv.org/pdf/2509.25270" target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8Z"></path>
+                    <path d="M14 3v5h5M9 12h6M9 16h6"></path>
+                  </svg>
+                  <span>Paper</span>
+                </a>
+                <a href="https://github.com/brightest66/InfMasking" target="_blank" rel="noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                    <path d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"></path>
+                  </svg>
+                  <span>Code</span>
+                </a>
+              </div>
+            </div>
 
             <div class="publication-info">
               <div class="conference-label">
-                <span class="conference-name">NeurIPS 2025</span>
+                <span class="conference-name">
+                  <img class="conference-logo" src="assets/neurips-navbar-logo.svg" alt="" width="28" height="28" />
+                  NeurIPS 2025
+                </span>
+                <span class="conference-rank" title="China Computer Federation: Category A">CCF A</span>
                 <span class="conference-highlight">Spotlight Paper</span>
               </div>
               <h3>
@@ -260,13 +303,14 @@
                 The Thirty-ninth Annual Conference on Neural Information Processing
                 Systems (NeurIPS), 2025.
               </p>
-              <div class="publication-links">
-                <a href="https://arxiv.org/abs/2509.25270" target="_blank" rel="noreferrer">Paper</a>
-                <a href="https://github.com/brightest66/InfMasking" target="_blank" rel="noreferrer">Code</a>
-              </div>
             </div>
           </article>
 
+        </section>
+
+        <section id="competitions" class="content-section" aria-labelledby="competitions-title">
+          <h2 id="competitions-title">Competitions</h2>
+          <p class="section-placeholder">Competition highlights will be added soon.</p>
         </section>
 
         <section id="education" class="content-section" aria-labelledby="education-title">
@@ -294,7 +338,7 @@
           <h2 id="awards-title">Awards & Honors</h2>
           <ul class="award-list">
             <li>
-              <time>2026.09</time>
+              <time>2026.10</time>
               <span>National Scholarship for Master's Students</span>
             </li>
             <li>
@@ -308,7 +352,7 @@
         <footer class="site-footer">
           <p>
             © <span id="current-year">2026</span> Qun Dai. Last updated:
-            <time id="last-updated" datetime="2026-10-09">October 9, 2026</time>.
+            <time id="last-updated" datetime="2026-10-13">October 13, 2026</time>.
           </p>
           <p class="footer-credit">This website is built with the help of <strong>Codex</strong>.</p>
         </footer>

@@ -239,6 +239,12 @@ strong {
   line-height: 1.3;
 }
 
+.section-placeholder {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
 .about-section p {
   max-width: 800px;
   margin: 0 0 16px;
@@ -474,23 +480,51 @@ strong {
 }
 
 .publication-links {
-  display: flex;
-  margin-top: 13px;
-  gap: 9px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 8px;
+  align-items: center;
+  gap: 8px;
 }
 
 .publication-links a {
-  padding: 3px 9px;
+  display: inline-flex;
+  min-height: 32px;
+  padding: 3px 8px;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: var(--link-dark);
   background: var(--soft-bg);
-  border: 1px solid var(--border);
-  border-radius: 3px;
+  border: 1px solid color-mix(in srgb, var(--muted) 35%, var(--border));
+  border-radius: 4px;
   font-size: 12px;
   font-weight: 550;
+  line-height: 1.5;
+  text-decoration: none;
 }
 
-.publication-links a:hover {
-  background: #edf4fa;
-  text-decoration: none;
+.publication-links a:hover,
+.publication-links a:focus-visible {
+  color: var(--link);
+  border-color: var(--link);
+}
+
+.publication-links svg {
+  width: 15px;
+  height: 15px;
+  flex: 0 0 auto;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+
+.publication-links a:hover span,
+.publication-links a:focus-visible span {
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .education-list {

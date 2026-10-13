@@ -192,14 +192,17 @@ html[data-theme="dark"] .publication-info h3 a {
 }
 
 html[data-theme="dark"] .conference-name {
-  background: #a4433c;
+  color: #c7a3e6;
+}
+
+html[data-theme="dark"] .conference-logo {
+  filter: brightness(1.55);
 }
 
 html[data-theme="dark"] .conference-highlight {
   color: #f09a92;
 }
 
-html[data-theme="dark"] .publication-links a,
 html[data-theme="dark"] .research-list li,
 html[data-theme="dark"] .education-list article,
 html[data-theme="dark"] .award-list li {
@@ -209,10 +212,6 @@ html[data-theme="dark"] .award-list li {
 
 html[data-theme="dark"] .research-list li {
   color: #a9d5f4;
-}
-
-html[data-theme="dark"] .publication-links a:hover {
-  background: #203243;
 }
 
 html[data-theme="dark"] .affiliation-card {

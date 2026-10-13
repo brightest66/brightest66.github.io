@@ -17,15 +17,30 @@
   font-size: 14px;
 }
 
+.news-conference {
+  white-space: nowrap;
+}
+
+.news-conference .conference-logo {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: -4px;
+}
+
 .publication {
-  grid-template-columns: minmax(240px, 280px) minmax(0, 1fr);
+  grid-template-columns: min(35%, 280px) minmax(0, 1fr);
   gap: 32px;
 }
 
 .publication + .publication {
-  margin-top: 36px;
-  padding-top: 32px;
+  margin-top: 14px;
+  padding-top: 18px;
   border-top: 1px solid var(--soft-border);
+}
+
+#publications {
+  padding-bottom: 20px;
 }
 
 #publications .section-heading-row {
@@ -45,11 +60,6 @@
 .publication-info .publication-venue {
   margin: 10px 0 0;
   line-height: 1.7;
-}
-
-.publication-links {
-  margin-top: 18px;
-  gap: 10px;
 }
 
 .publication-figure {
@@ -72,27 +82,48 @@
 
 .conference-label {
   display: flex;
-  margin-bottom: 14px;
+  margin-bottom: 12px;
   align-items: center;
-  gap: 10px;
+  gap: 8px 12px;
   flex-wrap: wrap;
 }
 
 .conference-name {
-  display: inline-block;
-  padding: 4px 9px;
-  color: #fff;
-  background: #9b3d35;
-  border-radius: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #68448b;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+
+.conference-logo {
+  display: block;
+  width: 28px;
+  height: 28px;
+  flex: 0 0 auto;
+}
+
+.conference-rank {
+  padding: 1px 6px;
+  color: var(--muted);
+  background: var(--soft-bg);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: 0.04em;
+  line-height: 1.6;
+  white-space: nowrap;
 }
 
 .conference-highlight {
   color: #9b3d35;
   font-size: 13px;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 @media (max-width: 560px) {
@@ -118,12 +149,7 @@
 
   .publication {
     grid-template-columns: 1fr;
-    gap: 22px;
-  }
-
-  .publication + .publication {
-    margin-top: 28px;
-    padding-top: 28px;
+    gap: 16px;
   }
 
   .publication-figure {
