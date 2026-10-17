@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="card-theme.css" />
     <link rel="stylesheet" href="affiliation-card.css" />
     <link rel="stylesheet" href="theme.css?v=20261013-publications" />
+    <link rel="stylesheet" href="competitions.css?v=20261017-theme-icons" />
   </head>
 
   <body>
@@ -149,6 +150,14 @@
         <section id="news" class="content-section" aria-labelledby="news-title">
           <h2 id="news-title">News</h2>
           <ul class="news-list" tabindex="0" aria-label="News items">
+            <li>
+              <time datetime="2026-10-15">2026.10</time>
+              <span>
+                I won a <strong>Silver Medal</strong> in the
+                <a href="https://www.kaggle.com/competitions/kaggriculture" target="_blank" rel="noreferrer">Kaggriculture</a>
+                competition on Kaggle, ranking <strong>182nd out of 10,148 teams (Top 1.79%)</strong>.
+              </span>
+            </li>
             <li>
               <time datetime="2026-10">2026.10</time>
               <span>
@@ -310,7 +319,53 @@
 
         <section id="competitions" class="content-section" aria-labelledby="competitions-title">
           <h2 id="competitions-title">Competitions</h2>
-          <p class="section-placeholder">Competition highlights will be added soon.</p>
+          <article class="competition">
+            <a
+              class="competition-brand"
+              href="https://www.kaggle.com/competitions/kaggriculture"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Kaggriculture competition on Kaggle"
+            >
+              <img
+                src="assets/kaggriculture-header.png"
+                alt="Kaggriculture farming simulation with two farmers and farm animals"
+                width="560"
+                height="280"
+              />
+            </a>
+            <div class="competition-info">
+              <h3>
+                <a href="https://www.kaggle.com/competitions/kaggriculture" target="_blank" rel="noreferrer">
+                  Kaggriculture — Autonomous AI Agents in a Farming Simulation
+                </a>
+              </h3>
+              <ul class="competition-badges" aria-label="Competition result and certificate">
+                <li class="competition-badge competition-badge-medal">
+                  <span aria-hidden="true">🥈</span> Silver Medal
+                </li>
+                <li class="competition-badge competition-badge-rank">
+                  <span aria-hidden="true">📈</span> 182/10,148 (Top 1.79%)
+                </li>
+                <li class="competition-badge competition-badge-date">
+                  <span aria-hidden="true">🗓️</span>
+                  <time datetime="2026-10-15">2026.10</time>
+                </li>
+                <li>
+                  <a
+                    class="competition-badge competition-badge-certificate"
+                    href="https://www.kaggle.com/certification/competitions/brightest66/kaggriculture"
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label="View Qun Dai's Kaggriculture silver medal certificate"
+                  >
+                    <span aria-hidden="true">📜</span>
+                    <span>Certificate</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </article>
         </section>
 
         <section id="education" class="content-section" aria-labelledby="education-title">
@@ -352,7 +407,7 @@
         <footer class="site-footer">
           <p>
             © <span id="current-year">2026</span> Qun Dai. Last updated:
-            <time id="last-updated" datetime="2026-10-13">October 13, 2026</time>.
+            <time id="last-updated" datetime="2026-10-17">October 17, 2026</time>.
           </p>
           <p class="footer-credit">This website is built with the help of <strong>Codex</strong>.</p>
         </footer>

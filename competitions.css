@@ -1,0 +1,110 @@
+/* Competition highlights share the site's typography, colors, and link controls. */
+
+.competition {
+  display: grid;
+  grid-template-columns: 100px minmax(0, 1fr);
+  gap: 22px;
+  align-items: center;
+  break-inside: avoid;
+}
+
+.competition-brand {
+  display: block;
+  overflow: hidden;
+  width: 100px;
+  height: auto;
+  background: var(--soft-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.competition-brand img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.competition-info {
+  min-width: 0;
+}
+
+.competition-info h3 {
+  margin: 0 0 10px;
+  font-size: 18px;
+  font-weight: 650;
+  line-height: 1.55;
+}
+
+.competition-info h3 a {
+  color: var(--link-dark);
+}
+
+.competition-badges {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+}
+
+.competition-badge {
+  display: inline-flex;
+  min-height: 30px;
+  padding: 3px 8px;
+  color: var(--link-dark);
+  background: var(--soft-bg);
+  border: 1px solid color-mix(in srgb, var(--muted) 35%, var(--border));
+  border-radius: 4px;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 550;
+  line-height: 1.5;
+}
+
+.competition-badge-medal {
+  font-weight: 650;
+}
+
+.competition-badge-certificate {
+  text-decoration: none;
+}
+
+.competition-badge-certificate:hover,
+.competition-badge-certificate:focus-visible {
+  color: var(--link);
+  border-color: var(--link);
+  text-decoration: none;
+}
+
+.competition-badge-certificate:hover span:last-child,
+.competition-badge-certificate:focus-visible span:last-child {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 560px) {
+  .competition {
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 14px;
+    align-items: center;
+  }
+
+  .competition-brand {
+    width: 72px;
+  }
+
+  .competition-info {
+    display: contents;
+  }
+
+  .competition-info h3 {
+    margin: 0;
+    font-size: 17px;
+  }
+
+  .competition-badges {
+    grid-column: 1 / -1;
+  }
+}
