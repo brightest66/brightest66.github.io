@@ -135,15 +135,11 @@ html[data-theme="dark"] .profile-photo {
 }
 
 html[data-theme="dark"] .profile-role,
-html[data-theme="dark"] .contact-list li,
+html[data-theme="dark"] .profile-location,
 html[data-theme="dark"] .education-list time,
 html[data-theme="dark"] .education-list small,
 html[data-theme="dark"] .section-heading-row p {
   color: #9aa9b8;
-}
-
-html[data-theme="dark"] .contact-list svg {
-  stroke: #93a5b5;
 }
 
 html[data-theme="dark"] .content-section h2 {
@@ -187,7 +183,7 @@ html[data-theme="dark"] .publication-figure {
   border-color: #40515f;
 }
 
-html[data-theme="dark"] .publication-info h3 a {
+html[data-theme="dark"] .publication-info h3 {
   color: #8acbfa;
 }
 

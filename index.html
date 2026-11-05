@@ -10,12 +10,14 @@
     <meta name="theme-color" content="#ffffff" />
     <title>Qun Dai | Homepage</title>
     <script src="theme.js"></script>
+    <script src="repository-stars.js" defer></script>
+    <script src="contact-email.js" defer></script>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=20261013-publications-4" />
-    <link rel="stylesheet" href="updates.css?v=20261013-news-logo" />
+    <link rel="stylesheet" href="styles.css?v=20261105-about-width" />
+    <link rel="stylesheet" href="updates.css?v=20261105-title-font" />
     <link rel="stylesheet" href="card-theme.css" />
-    <link rel="stylesheet" href="affiliation-card.css" />
-    <link rel="stylesheet" href="theme.css?v=20261013-publications" />
+    <link rel="stylesheet" href="affiliation-card.css?v=20261105-contact-icons" />
+    <link rel="stylesheet" href="theme.css?v=20261105-contact-icons" />
     <link rel="stylesheet" href="competitions.css?v=20261017-theme-icons" />
   </head>
 
@@ -89,31 +91,56 @@
             </div>
           </a>
 
-          <ul class="contact-list" aria-label="Contact information">
-            <li>
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"></path>
-                <circle cx="12" cy="10" r="2.5"></circle>
-              </svg>
-              <span>Chengdu, China</span>
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M3 6.5h18v12H3z"></path>
-                <path d="m3.5 7 8.5 6 8.5-6"></path>
-              </svg>
-              <a href="mailto:daiqun1124@gmail.com">daiqun1124@gmail.com</a>
-            </li>
-          </ul>
+          <div class="profile-resources">
+            <ul class="contact-list" aria-label="Contact information">
+              <li class="profile-location">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"></path>
+                  <circle cx="12" cy="10" r="2.5"></circle>
+                </svg>
+                <span>Chengdu, China</span>
+              </li>
+              <li>
+                <details class="email-contact">
+                  <summary aria-label="Email Qun Dai" title="Email Qun Dai">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M3 6.5h18v12H3z"></path>
+                      <path d="m3.5 7 8.5 6 8.5-6"></path>
+                    </svg>
+                  </summary>
+                  <div class="email-panel">
+                    <input type="text" value="daiqun1124@gmail.com" aria-label="Email address" readonly />
+                    <div class="email-actions">
+                      <a href="mailto:daiqun1124@gmail.com">Write email</a>
+                      <button type="button" class="copy-email">Copy address</button>
+                    </div>
+                    <p class="email-status" role="status"></p>
+                  </div>
+                </details>
+              </li>
+              <li>
+                <a href="https://github.com/brightest66" target="_blank" rel="noreferrer" aria-label="GitHub profile" title="GitHub profile">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7.5A5.8 5.8 0 0 0 19.2 3 5.4 5.4 0 0 0 19 0s-1.2-.4-4 1.5a13.8 13.8 0 0 0-7 0C5.2-.4 4 0 4 0a5.4 5.4 0 0 0-.2 3A5.8 5.8 0 0 0 2.2 7c0 5.9 3.5 7.1 6.8 7.5A4.8 4.8 0 0 0 8 18v4"></path>
+                    <path d="M8 19c-3 .9-3-1.5-4.2-2"></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
 
-          <div class="profile-links">
-            <a href="https://github.com/brightest66" target="_blank" rel="noreferrer">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3.3-.4 6.8-1.6 6.8-7.5A5.8 5.8 0 0 0 19.2 3 5.4 5.4 0 0 0 19 0s-1.2-.4-4 1.5a13.8 13.8 0 0 0-7 0C5.2-.4 4 0 4 0a5.4 5.4 0 0 0-.2 3A5.8 5.8 0 0 0 2.2 7c0 5.9 3.5 7.1 6.8 7.5A4.8 4.8 0 0 0 8 18v4"></path>
-                <path d="M8 19c-3 .9-3-1.5-4.2-2"></path>
-              </svg>
-              GitHub
-            </a>
+            <section class="profile-repositories" aria-labelledby="profile-repositories-title">
+              <h2 id="profile-repositories-title">Selected Public Repositories</h2>
+              <ul>
+                <li>
+                  <a href="https://github.com/brightest66/InfMasking" target="_blank" rel="noreferrer">brightest66/InfMasking</a>
+                  <span class="repository-meta">★ <span data-repository-stars="brightest66/InfMasking" title="Last known GitHub star count">30</span> · Python</span>
+                </li>
+                <li>
+                  <a href="https://github.com/brightest66/HRIL" target="_blank" rel="noreferrer">brightest66/HRIL</a>
+                  <span class="repository-meta">★ <span data-repository-stars="brightest66/HRIL" title="Last known GitHub star count">6</span> · Python</span>
+                </li>
+              </ul>
+            </section>
           </div>
         </div>
       </aside>
@@ -150,6 +177,27 @@
         <section id="news" class="content-section" aria-labelledby="news-title">
           <h2 id="news-title">News</h2>
           <ul class="news-list" tabindex="0" aria-label="News items">
+            <li>
+              <time datetime="2026-11">2026.11</time>
+              <span>
+                Our paper
+                <a href="#multimodal-information-bottleneck">Multimodal Information Interactions Bottleneck for Multimodal Self-Supervised Learning</a>
+                was accepted to
+                <strong class="news-conference"><img class="ieee-logo" src="assets/ieee-logo.png?v=blue" alt="IEEE" width="50" height="15" /> TPAMI 2026</strong>
+                as a <strong>Regular Paper</strong>.
+                Congratulations to my co-authors!
+              </span>
+            </li>
+            <li>
+              <time datetime="2026-11">2026.11</time>
+              <span>
+                The journal extension of our NeurIPS 2025 InfMasking paper,
+                <a href="https://doi.org/10.1109/TPAMI.2026.3751348" target="_blank" rel="noreferrer">InfMasking: A Unified Variational Framework for Synergistic Multimodal Learning</a>,
+                was accepted to
+                <strong class="news-conference"><img class="ieee-logo" src="assets/ieee-logo.png?v=blue" alt="IEEE" width="50" height="15" /> TPAMI 2026</strong>
+                as a <strong>Regular Paper</strong>.
+              </span>
+            </li>
             <li>
               <time datetime="2026-10-15">2026.10</time>
               <span>
@@ -204,6 +252,59 @@
             <p><sup>*</sup> Equal contribution</p>
           </div>
 
+          <article class="publication publication-journal">
+            <div class="publication-media">
+              <figure class="publication-figure">
+                <a href="assets/infmasking-tpami-flow-chart.png" target="_blank" rel="noreferrer" aria-label="Open the full-size IEEE TPAMI InfMasking workflow">
+                  <img
+                    src="assets/infmasking-tpami-flow-chart.png"
+                    alt="InfMasking workflow with modality-specific encoders, feature masking, and fusion in supervised and unsupervised settings"
+                    width="2375"
+                    height="1588"
+                  />
+                </a>
+              </figure>
+            </div>
+
+            <div class="publication-info">
+              <div class="conference-label">
+                <span class="journal-name">
+                  <img class="ieee-logo" src="assets/ieee-logo.png?v=blue" alt="IEEE" width="50" height="15" />
+                  TPAMI 2026
+                </span>
+                <span class="conference-rank" title="China Computer Federation: Category A">CCF A</span>
+                <span class="conference-highlight">Regular Paper</span>
+                <div class="publication-links">
+                  <button type="button" aria-label="Paper accepted, Early Access pending" disabled>
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8Z"></path>
+                      <path d="M14 3v5h5M9 12h6M9 16h6"></path>
+                    </svg>
+                    <span>Paper · Early Access pending</span>
+                  </button>
+                  <button type="button" aria-label="Code coming soon" disabled>
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"></path>
+                    </svg>
+                    <span>Code · Coming soon</span>
+                  </button>
+                </div>
+              </div>
+              <h3>
+                <a href="https://doi.org/10.1109/TPAMI.2026.3751348" target="_blank" rel="noreferrer">
+                  InfMasking: A Unified Variational Framework for Synergistic Multimodal Learning
+                </a>
+              </h3>
+              <p class="authors">
+                Liangjian Wen, <strong>Qun Dai (first student author)</strong>, Jiang Duan, Yong Dai,
+                Jianzhuang Liu, Dongkai Wang, Jun Wang, Fuyuan Cao, Zenglin Xu, Zhao Kang
+              </p>
+              <p class="publication-venue">
+                IEEE Transactions on Pattern Analysis and Machine Intelligence, 2026.
+              </p>
+            </div>
+          </article>
+
           <article class="publication">
             <div class="publication-media">
               <figure class="publication-figure">
@@ -216,21 +317,6 @@
                   />
                 </a>
               </figure>
-              <div class="publication-links">
-                <a href="https://arxiv.org/pdf/2610.12393" target="_blank" rel="noreferrer">
-                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                    <path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8Z"></path>
-                    <path d="M14 3v5h5M9 12h6M9 16h6"></path>
-                  </svg>
-                  <span>Paper</span>
-                </a>
-                <a href="https://github.com/brightest66/HRIL" target="_blank" rel="noreferrer">
-                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                    <path d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"></path>
-                  </svg>
-                  <span>Code</span>
-                </a>
-              </div>
             </div>
 
             <div class="publication-info">
@@ -241,6 +327,21 @@
                 </span>
                 <span class="conference-rank" title="China Computer Federation: Category A">CCF A</span>
                 <span class="conference-highlight">Poster Paper</span>
+                <div class="publication-links">
+                  <a href="https://arxiv.org/pdf/2610.12393" target="_blank" rel="noreferrer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8Z"></path>
+                      <path d="M14 3v5h5M9 12h6M9 16h6"></path>
+                    </svg>
+                    <span>Paper</span>
+                  </a>
+                  <a href="https://github.com/brightest66/HRIL" target="_blank" rel="noreferrer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"></path>
+                    </svg>
+                    <span>Code</span>
+                  </a>
+                </div>
               </div>
               <h3>
                 <a href="https://arxiv.org/abs/2610.12393" target="_blank" rel="noreferrer">
@@ -271,21 +372,6 @@
                   />
                 </a>
               </figure>
-              <div class="publication-links">
-                <a href="https://arxiv.org/pdf/2509.25270" target="_blank" rel="noreferrer">
-                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                    <path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8Z"></path>
-                    <path d="M14 3v5h5M9 12h6M9 16h6"></path>
-                  </svg>
-                  <span>Paper</span>
-                </a>
-                <a href="https://github.com/brightest66/InfMasking" target="_blank" rel="noreferrer">
-                  <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                    <path d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"></path>
-                  </svg>
-                  <span>Code</span>
-                </a>
-              </div>
             </div>
 
             <div class="publication-info">
@@ -296,6 +382,21 @@
                 </span>
                 <span class="conference-rank" title="China Computer Federation: Category A">CCF A</span>
                 <span class="conference-highlight">Spotlight Paper</span>
+                <div class="publication-links">
+                  <a href="https://arxiv.org/pdf/2509.25270" target="_blank" rel="noreferrer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8Z"></path>
+                      <path d="M14 3v5h5M9 12h6M9 16h6"></path>
+                    </svg>
+                    <span>Paper</span>
+                  </a>
+                  <a href="https://github.com/brightest66/InfMasking" target="_blank" rel="noreferrer">
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"></path>
+                    </svg>
+                    <span>Code</span>
+                  </a>
+                </div>
               </div>
               <h3>
                 <a href="https://arxiv.org/abs/2509.25270" target="_blank" rel="noreferrer">
@@ -311,6 +412,57 @@
               <p class="publication-venue">
                 The Thirty-ninth Annual Conference on Neural Information Processing
                 Systems (NeurIPS), 2025.
+              </p>
+            </div>
+          </article>
+
+          <article id="multimodal-information-bottleneck" class="publication publication-journal">
+            <div class="publication-media">
+              <figure class="publication-figure">
+                <a href="assets/multimodal-information-bottleneck-flow-chart.png" target="_blank" rel="noreferrer" aria-label="Open the full-size multimodal information bottleneck workflow">
+                  <img
+                    src="assets/multimodal-information-bottleneck-flow-chart.png"
+                    alt="Multimodal self-supervised learning workflow with modality-specific encoders and separate fusion and synergy transformer blocks"
+                    width="1317"
+                    height="796"
+                  />
+                </a>
+              </figure>
+            </div>
+
+            <div class="publication-info">
+              <div class="conference-label">
+                <span class="journal-name">
+                  <img class="ieee-logo" src="assets/ieee-logo.png?v=blue" alt="IEEE" width="50" height="15" />
+                  TPAMI 2026
+                </span>
+                <span class="conference-rank" title="China Computer Federation: Category A">CCF A</span>
+                <span class="conference-highlight">Regular Paper</span>
+                <div class="publication-links">
+                  <button type="button" aria-label="Paper accepted, Early Access pending" disabled>
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8Z"></path>
+                      <path d="M14 3v5h5M9 12h6M9 16h6"></path>
+                    </svg>
+                    <span>Paper · Early Access pending</span>
+                  </button>
+                  <button type="button" aria-label="Code coming soon" disabled>
+                    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <path d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"></path>
+                    </svg>
+                    <span>Code · Coming soon</span>
+                  </button>
+                </div>
+              </div>
+              <h3>
+                Multimodal Information Interactions Bottleneck for Multimodal Self-Supervised Learning
+              </h3>
+              <p class="authors">
+                Liangjian Wen, Jiangtao Zheng, Jiang Duan, <strong>Qun Dai</strong>,
+                Yong Dai, Jianzhuang Liu, Jun Wang, Shudong Huang, Xinwang Liu, Zenglin Xu, Zhao Kang
+              </p>
+              <p class="publication-venue">
+                IEEE Transactions on Pattern Analysis and Machine Intelligence, 2026.
               </p>
             </div>
           </article>
@@ -407,7 +559,7 @@
         <footer class="site-footer">
           <p>
             © <span id="current-year">2026</span> Qun Dai. Last updated:
-            <time id="last-updated" datetime="2026-10-17">October 17, 2026</time>.
+            <time id="last-updated" datetime="2026-11-05">November 5, 2026</time>.
           </p>
           <p class="footer-credit">This website is built with the help of <strong>Codex</strong>.</p>
         </footer>

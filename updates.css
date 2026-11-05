@@ -28,6 +28,15 @@
   vertical-align: -4px;
 }
 
+.ieee-logo {
+  width: 50px;
+  height: auto;
+  padding: 1px 2px;
+  border-radius: 3px;
+  background: #fff;
+  vertical-align: middle;
+}
+
 .publication {
   grid-template-columns: min(35%, 280px) minmax(0, 1fr);
   gap: 32px;
@@ -88,15 +97,31 @@
   flex-wrap: wrap;
 }
 
-.conference-name {
+.conference-name,
+.journal-name {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  color: #68448b;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.02em;
   white-space: nowrap;
+}
+
+.conference-name {
+  color: #68448b;
+}
+
+.publication-journal {
+  --journal-accent: #3d6b89;
+}
+
+html[data-theme="dark"] .publication-journal {
+  --journal-accent: #9bbbd0;
+}
+
+.journal-name {
+  color: var(--journal-accent);
 }
 
 .conference-logo {
