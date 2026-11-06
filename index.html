@@ -13,11 +13,11 @@
     <script src="repository-stars.js" defer></script>
     <script src="contact-email.js" defer></script>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="styles.css?v=20261105-about-width" />
-    <link rel="stylesheet" href="updates.css?v=20261105-title-font" />
-    <link rel="stylesheet" href="card-theme.css" />
+    <link rel="stylesheet" href="styles.css?v=20261106-publication-groups" />
+    <link rel="stylesheet" href="updates.css?v=20261106-about-divider" />
+    <link rel="stylesheet" href="card-theme.css?v=20261106-publication-heading" />
     <link rel="stylesheet" href="affiliation-card.css?v=20261105-contact-icons" />
-    <link rel="stylesheet" href="theme.css?v=20261105-contact-icons" />
+    <link rel="stylesheet" href="theme.css?v=20261106-publication-groups" />
     <link rel="stylesheet" href="competitions.css?v=20261017-theme-icons" />
   </head>
 
@@ -149,29 +149,23 @@
         <section id="about" class="content-section about-section" aria-labelledby="about-title">
           <h2 id="about-title">About Me</h2>
           <p>
-            I received the B.E. degree in Artificial Intelligence from the
+            I received my B.E. in Artificial Intelligence from the
             <strong>School of Computer and Artificial Intelligence</strong>,
             <strong>Southwestern University of Finance and Economics</strong>
-            (SWUFE), Chengdu, China, in June 2025.
+            (SWUFE), Chengdu, China, in 2025
+            and am now pursuing a master's degree in Computer Science and Technology there,
+            admitted through recommendation without an entrance examination.
           </p>
-          <p>
-            I am currently pursuing a master's degree in Computer Science and Technology at the
-            <strong>School of Computer and Artificial Intelligence, SWUFE</strong>.
-            I was admitted through the recommendation pathway without taking the
-            national postgraduate entrance examination.
-          </p>
-        </section>
-
-        <section id="research" class="content-section" aria-labelledby="research-title">
-          <h2 id="research-title">Research Interests</h2>
-          <p class="research-description">
-            <!-- My research interests include multimodal learning and contrastive learning. -->
-            My research interests include multimodal learning and contrastive learning. Currently, I focus on multimodal representation learning, cross-modal interaction, robust multimodal fusion.
-          </p>
-          <ul class="research-list">
-            <li>Multimodal Learning</li>
-            <li>Contrastive Learning</li>
-          </ul>
+          <section id="research" class="about-research" aria-label="Research interests">
+            <p class="research-description">
+              <!-- My research interests include multimodal learning and contrastive learning. -->
+              My research interests include multimodal learning and contrastive learning. Currently, I focus on multimodal representation learning, cross-modal interaction, robust multimodal fusion.
+            </p>
+            <ul class="research-list">
+              <li>Multimodal Learning</li>
+              <li>Contrastive Learning</li>
+            </ul>
+          </section>
         </section>
 
         <section id="news" class="content-section" aria-labelledby="news-title">
@@ -181,7 +175,7 @@
               <time datetime="2026-11">2026.11</time>
               <span>
                 Our paper
-                <a href="#multimodal-information-bottleneck">Multimodal Information Interactions Bottleneck for Multimodal Self-Supervised Learning</a>
+                <a href="https://doi.org/10.1109/TPAMI.2026.3751756" target="_blank" rel="noreferrer">Multimodal Information Interactions Bottleneck for Multimodal Self-Supervised Learning</a>
                 was accepted to
                 <strong class="news-conference"><img class="ieee-logo" src="assets/ieee-logo.png?v=blue" alt="IEEE" width="50" height="15" /> TPAMI 2026</strong>
                 as a <strong>Regular Paper</strong>.
@@ -248,8 +242,13 @@
 
         <section id="publications" class="content-section" aria-labelledby="publications-title">
           <div class="section-heading-row">
-            <h2 id="publications-title">Selected Publications</h2>
+            <h2 id="publications-title">All Publications</h2>
             <p><sup>*</sup> Equal contribution</p>
+          </div>
+
+          <div class="publication-group-heading">
+            <h3 id="lead-author-papers-title">Lead-Author Papers</h3>
+            <p>First-author, co-first-author, and first-student-author work.</p>
           </div>
 
           <article class="publication publication-journal">
@@ -275,26 +274,26 @@
                 <span class="conference-rank" title="China Computer Federation: Category A">CCF A</span>
                 <span class="conference-highlight">Regular Paper</span>
                 <div class="publication-links">
-                  <button type="button" aria-label="Paper accepted, Early Access pending" disabled>
+                  <a href="https://doi.org/10.1109/TPAMI.2026.3751348" target="_blank" rel="noreferrer">
                     <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                       <path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8Z"></path>
                       <path d="M14 3v5h5M9 12h6M9 16h6"></path>
                     </svg>
-                    <span>Paper · Early Access pending</span>
-                  </button>
-                  <button type="button" aria-label="Code coming soon" disabled>
+                    <span>Paper</span>
+                  </a>
+                  <a href="https://github.com/brightest66/InfMasking" target="_blank" rel="noreferrer">
                     <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                       <path d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"></path>
                     </svg>
-                    <span>Code · Coming soon</span>
-                  </button>
+                    <span>Code</span>
+                  </a>
                 </div>
               </div>
-              <h3>
+              <h4>
                 <a href="https://doi.org/10.1109/TPAMI.2026.3751348" target="_blank" rel="noreferrer">
                   InfMasking: A Unified Variational Framework for Synergistic Multimodal Learning
                 </a>
-              </h3>
+              </h4>
               <p class="authors">
                 Liangjian Wen, <strong>Qun Dai (first student author)</strong>, Jiang Duan, Yong Dai,
                 Jianzhuang Liu, Dongkai Wang, Jun Wang, Fuyuan Cao, Zenglin Xu, Zhao Kang
@@ -343,11 +342,11 @@
                   </a>
                 </div>
               </div>
-              <h3>
+              <h4>
                 <a href="https://arxiv.org/abs/2610.12393" target="_blank" rel="noreferrer">
                   HRIL: Learning Multimodal Synergy via Higher-Order Tensor Modeling
                 </a>
-              </h3>
+              </h4>
               <p class="authors">
                 <strong>Qun Dai</strong>, Liangjian Wen, Jiang Duan, Yong Dai,
                 Dongkai Wang, Maolin Wang, Mingjie Wang, Jianzhuang Liu,
@@ -398,12 +397,12 @@
                   </a>
                 </div>
               </div>
-              <h3>
+              <h4>
                 <a href="https://arxiv.org/abs/2509.25270" target="_blank" rel="noreferrer">
                   InfMasking: Unleashing Synergistic Information by Contrastive
                   Multimodal Interactions
                 </a>
-              </h3>
+              </h4>
               <p class="authors">
                 Liangjian Wen<sup>*</sup>, <strong>Qun Dai<sup>*</sup></strong>,
                 Jianzhuang Liu, Jiangtao Zheng, Yong Dai, Dongkai Wang, Zhao Kang,
@@ -415,6 +414,10 @@
               </p>
             </div>
           </article>
+
+          <div class="publication-group-heading">
+            <h3 id="co-authored-papers-title">Co-Authored Papers</h3>
+          </div>
 
           <article id="multimodal-information-bottleneck" class="publication publication-journal">
             <div class="publication-media">
@@ -439,13 +442,13 @@
                 <span class="conference-rank" title="China Computer Federation: Category A">CCF A</span>
                 <span class="conference-highlight">Regular Paper</span>
                 <div class="publication-links">
-                  <button type="button" aria-label="Paper accepted, Early Access pending" disabled>
+                  <a href="https://doi.org/10.1109/TPAMI.2026.3751756" target="_blank" rel="noreferrer">
                     <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                       <path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8Z"></path>
                       <path d="M14 3v5h5M9 12h6M9 16h6"></path>
                     </svg>
-                    <span>Paper · Early Access pending</span>
-                  </button>
+                    <span>Paper</span>
+                  </a>
                   <button type="button" aria-label="Code coming soon" disabled>
                     <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                       <path d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"></path>
@@ -454,9 +457,11 @@
                   </button>
                 </div>
               </div>
-              <h3>
-                Multimodal Information Interactions Bottleneck for Multimodal Self-Supervised Learning
-              </h3>
+              <h4>
+                <a href="https://doi.org/10.1109/TPAMI.2026.3751756" target="_blank" rel="noreferrer">
+                  Multimodal Information Interactions Bottleneck for Multimodal Self-Supervised Learning
+                </a>
+              </h4>
               <p class="authors">
                 Liangjian Wen, Jiangtao Zheng, Jiang Duan, <strong>Qun Dai</strong>,
                 Yong Dai, Jianzhuang Liu, Jun Wang, Shudong Huang, Xinwang Liu, Zenglin Xu, Zhao Kang
@@ -559,7 +564,7 @@
         <footer class="site-footer">
           <p>
             © <span id="current-year">2026</span> Qun Dai. Last updated:
-            <time id="last-updated" datetime="2026-11-05">November 5, 2026</time>.
+            <time id="last-updated" datetime="2026-11-06">November 6, 2026</time>.
           </p>
           <p class="footer-credit">This website is built with the help of <strong>Codex</strong>.</p>
         </footer>

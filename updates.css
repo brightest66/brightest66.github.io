@@ -1,5 +1,19 @@
 /* Content-specific additions for the research section and publication figure. */
 
+.about-research {
+  margin-top: 0;
+  padding-top: 10px;
+  border-top: 1px solid var(--soft-border);
+}
+
+.about-research .research-description {
+  margin: 0;
+}
+
+.about-research .research-list {
+  margin-top: 10px;
+}
+
 .research-description {
   margin: 0;
   color: #37404a;
@@ -53,10 +67,37 @@
 }
 
 #publications .section-heading-row {
-  margin-bottom: 28px;
+  margin-bottom: 22px;
 }
 
-.publication-info h3 {
+.publication-group-heading {
+  margin-bottom: 18px;
+  padding-left: 11px;
+}
+
+.publication-group-heading h3 {
+  margin: 0;
+  color: var(--text);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.publication-group-heading p {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.publication + .publication-group-heading {
+  margin-top: 30px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+}
+
+.publication-info h4 {
   margin-bottom: 14px;
   line-height: 1.55;
 }

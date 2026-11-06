@@ -564,7 +564,7 @@ strong {
   font-weight: 650;
 }
 
-.publication-info h3 {
+.publication-info h4 {
   margin: 0 0 10px;
   color: var(--link-dark);
   font-size: 18px;
@@ -572,7 +572,7 @@ strong {
   line-height: 1.45;
 }
 
-.publication-info h3 a {
+.publication-info h4 a {
   color: inherit;
 }
 

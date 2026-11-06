@@ -224,8 +224,18 @@ body {
   }
 
   .content-section h2,
-  .section-heading-row {
+  .section-heading-row,
+  .publication-group-heading {
     padding-left: 9px;
+  }
+
+  .section-heading-row {
+    flex-wrap: wrap;
+    gap: 6px 20px;
+  }
+
+  .section-heading-row h2 {
+    padding-left: 0;
   }
 }
 
