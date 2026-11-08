@@ -6,6 +6,40 @@
   border-top: 1px solid var(--soft-border);
 }
 
+.about-section .about-collaboration {
+  margin: 16px 0;
+}
+
+.ai-collaborator {
+  display: inline-flex;
+  margin: 0 0.14em;
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 650;
+  line-height: 1;
+  align-items: center;
+  gap: 0.4em;
+  white-space: nowrap;
+  vertical-align: -0.22em;
+}
+
+.ai-collaborator:hover,
+.ai-collaborator:focus-visible {
+  color: var(--link);
+}
+
+.ai-collaborator-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+html[data-theme="dark"] .ai-collaborator-icon--codex {
+  filter: invert(1);
+}
+
 .about-research .research-description {
   margin: 0;
 }
