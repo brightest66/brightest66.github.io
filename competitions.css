@@ -1,27 +1,37 @@
 /* Competition highlights share the site's typography, colors, and link controls. */
 
 .competition {
+  --competition-image-height: 96px;
   display: grid;
-  grid-template-columns: 100px minmax(0, 1fr);
-  gap: 22px;
+  grid-template-columns: 176px minmax(0, 1fr);
+  gap: 18px;
   align-items: center;
   break-inside: avoid;
 }
 
+.competition + .competition {
+  margin-top: 7px;
+  padding-top: 7px;
+  border-top: 1px solid var(--border);
+}
+
 .competition-brand {
-  display: block;
-  overflow: hidden;
-  width: 100px;
-  height: auto;
-  background: var(--soft-bg);
-  border: 1px solid var(--border);
-  border-radius: 6px;
+  display: grid;
+  place-items: center;
 }
 
 .competition-brand img {
   display: block;
   width: 100%;
   height: auto;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.competition-brand--logo img {
+  width: var(--competition-image-height);
+  border: 0;
+  border-radius: 50%;
 }
 
 .competition-info {
@@ -29,12 +39,13 @@
 }
 
 .competition-info h3 {
-  margin: 0 0 10px;
+  margin: 0 0 7px;
   font-size: 18px;
   font-weight: 650;
-  line-height: 1.55;
+  line-height: 1.4;
 }
 
+.competition-info h3,
 .competition-info h3 a {
   color: var(--link-dark);
 }
@@ -63,7 +74,7 @@
   line-height: 1.5;
 }
 
-.competition-badge-medal {
+.competition-badge-result {
   font-weight: 650;
 }
 
@@ -86,13 +97,9 @@
 
 @media (max-width: 560px) {
   .competition {
-    grid-template-columns: 72px minmax(0, 1fr);
-    gap: 14px;
-    align-items: center;
-  }
-
-  .competition-brand {
-    width: 72px;
+    --competition-image-height: 80px;
+    grid-template-columns: 120px minmax(0, 1fr);
+    gap: 8px 12px;
   }
 
   .competition-info {
